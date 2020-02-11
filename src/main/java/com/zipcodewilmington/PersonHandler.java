@@ -13,6 +13,13 @@ public class PersonHandler {
     public String whileLoop() {
         String result = "";
         // create a `counter`
+        int currentPersonIndex = 0;
+        while (currentPersonIndex < personArray.length){
+            String nameOfPerson = personArray[currentPersonIndex].toString();
+            result += nameOfPerson;
+            currentPersonIndex++;
+
+        }
         // while `counter` is less than length of array
             // begin loop
 
